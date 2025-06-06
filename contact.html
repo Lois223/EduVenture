@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="https://kit.fontawesome.com/1e3d5daa34.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+      <section class="nav">
+        <div class="nav-toggle" id="navToggle">&#9776;</div>
+
+        <a href="index.html"><img src="image/logo.png" class="logo"></a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li>
+                    <a href="destination.html">Destinations</a>
+                    <ul>
+                        <li class="li_1">
+                            <a href="banguiwindmills.html">Bangui Windmills</a>
+                            <a href="pagudpudviaduct.html">Patapat Viaduct</a>
+                            <a href="malacañangnorth.html">Malacañang of the North</a>
+                            <a href="rockformation.html">Kapurpurawan Rock Formation</a>
+                        </li>
+                        <li class="li_2">
+                            <a href="baluartezoo.html">Baluarte Zoo</a>
+                            <a href="paoaychurch.html">Paoay Church</a>
+                            <a href="sanddunes.html">Paoay Sand Dunes</a>
+                            <a href="pottery.html">Pagburnayan Pottery</a>
+                        </li>
+                        <li class="li_3">
+                            <a href="plazasalcedo.html">Plaza Salcedo</a>
+                            <a href="callecrisologo.html">Calle Crisologo</a>
+                            <a href="fortilocandia.html">Fort Ilocandia Resort Hotel</a>
+                            <a href="northwind.html">Northwind Corporation</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" style="color: #EE6417;">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#" id="searchIcon" onclick="toggleSearchInput()"><i class="fas fa-search"></i></a>
+        <input type="text" id="searchInput" placeholder="Search..." style="display: none;">
+    </section>
+
+        <section class="banner">
+            <img src="image/sunset.JPG">
+        </section>
+
+        <section class="breadcrumbs">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><i class="fa-solid fa-caret-right"></i> </li>
+                <li class="curpage"><a href="contact.html">Contact</a></li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <div class="box-container">
+                <div class="box">
+                    <h1>CONTACT</h1>
+                    <p>At EduVenture, we're dedicated to ensuring your visit is unforgettable. If you have any inquiries, suggestions, or 
+                        require assistance organizing your trip to see these majestic places, please feel free to get in touch. We're here to
+                         offer swift and valuable assistance. Don't hesitate to reach out to us directly.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h1>Contact Us</h1>
+            <div class="row">
+                <form action="">
+                    <input type="text" placeholder="Name" class="box">
+                    <input type="text" placeholder="Email" class="box">
+                    <textarea name="" class="box" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Send Message" class="btn-1">
+                </form>   
+                <div class="content">        
+                    <p>
+                        For questions about visiting Ilocos, help with planning your visit, or questions about the EduVenture, 
+                        please call 801-223-1700 or send an email to <a href = "#">info@eduventure.com.</a>
+                    </p>
+                    <p>
+                        <strong>
+                            Office and mailing address
+                        </strong>
+                        <br>
+                        Univeristy of Batangas Lipa Campus
+                        <br>
+                        Leviste Highway
+                        <br>
+                        Lipa City Batangas
+                    </p>
+                </div>   
+            </div>
+        </section>
+
+        
+        <section class="footer-banner">
+            <img src="image/sunset2.JPG">
+            <div class="content">
+                <h1>Well-prepared travel is responsible travel.</h1>
+                <p>DO YOUR PART BY PLANNING AHEAD</p>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <img src="image/logo2.png" class="logo">
+                    <h3>Discover Your Path to Adventure and Enlightenment</h3>
+                    <div class="icons">
+                        <a href="#" class="fa-brands fa-square-facebook"></a> 
+                        <a href="#" class="fa-brands fa-instagram"></a> 
+                        <a href="#" class="fa-brands fa-pinterest"></a>
+                    </div>           
+                </div>
+
+                <div class="box">
+                    <h3>Helpful Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="destination.html">Destinations</a> 
+                    <a href="contact.html">Contact</a> 
+                </div>
+            </div>
+
+        <div class="credit">©2024 EduVenture <span> | All rights reserved.</span></div> 
+        </section>
+
+        <script>
+            // toggle visibility of the search input
+            function toggleSearchInput() {
+                const searchInput = document.getElementById('searchInput');
+                searchInput.style.display = (searchInput.style.display === 'none' || searchInput.style.display === '') ? 'block' : 'none';
+                if (searchInput.style.display === 'block') {
+                    searchInput.focus();
+                } else {
+                    resetSearch();
+                }
+            }
+
+            const toggle = document.getElementById("navToggle");
+            const navbar = document.querySelector(".navbar");
+
+            toggle.addEventListener("click", () => {
+                navbar.classList.toggle("show");
+            });
+        </script>
+
+    </body>
+</html>
